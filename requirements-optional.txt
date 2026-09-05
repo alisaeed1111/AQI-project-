@@ -1,0 +1,14 @@
+# ── Optional extras ────────────────────────────────────────────────────
+# The project runs fully WITHOUT these. They add:
+#   • TensorFlow  – a third model (a small neural network) in the training lineup
+#   • SHAP        – nicer feature-importance explanations in the dashboard
+#                   (without it, the dashboard uses permutation importance)
+#
+# Install with:  pip install -r requirements-optional.txt
+#
+# Note: TensorFlow only ships wheels for Python 3.9–3.11, and installing it
+# may pin numpy < 2.0. If any of this fails, no problem — the project detects
+# it and carries on with Ridge + Random Forest and permutation importance.
+
+tensorflow-cpu>=2.13,<2.16
+shap>=0.44

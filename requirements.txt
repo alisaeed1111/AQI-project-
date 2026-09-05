@@ -1,0 +1,23 @@
+# ── Pearls AQI Predictor — core Python dependencies ────────────────────
+# Install with:  pip install -r requirements.txt
+#
+# This core set installs cleanly on any recent Python (3.9–3.13).
+# Optional extras (TensorFlow neural network + SHAP explanations) live in
+# requirements-optional.txt, so a version/wheel mismatch on those can never
+# block the core setup. numpy is left flexible so pip can pick a build that
+# has prebuilt wheels for whatever Python version you have.
+
+numpy>=1.26
+pandas>=2.0,<3.0
+scipy
+scikit-learn>=1.3
+joblib>=1.3
+pyarrow>=14.0
+
+# External data source
+requests>=2.31
+python-dotenv>=1.0
+
+# Visualisation & dashboard
+matplotlib>=3.7
+streamlit>=1.30
